@@ -6,8 +6,11 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 const ProductCarousel = () => {
   const [products, setProducts] = useState([]);
+
+  
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -53,7 +56,8 @@ const ProductCarousel = () => {
         {products.map(product => (
           <div key={product.id}>
             <ProductCard
-              image={product.images[0]} // Assuming `imageUrls` is an array in your Firestore document
+              id={product.id}
+              image={product.images[0]} 
               title={product.productTitle}
               description={product.description}
               price={product.price}

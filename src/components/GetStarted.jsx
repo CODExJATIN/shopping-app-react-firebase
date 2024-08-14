@@ -98,7 +98,7 @@ const GetStarted = () => {
 
       <div className="footer-container">
         <footer className="footer">
-          <div>© 2024 Walmart. All Rights Reserved.</div>
+          <div>© 2024 BallCart. All Rights Reserved.</div>
           <ul className="footer-links">
             <li>
               <button className="feedback-button">Give feedback</button>

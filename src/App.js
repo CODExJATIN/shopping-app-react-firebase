@@ -5,6 +5,7 @@ import LoginForm from './components/LoginPage';
 import ProductUploadForm from './components/ProductForm';
 import HomePage from './components/HomePage';
 import { Routes,Route } from 'react-router-dom';
+import ProductPage from './components/ProductPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/signup' element={<SignupForm/>}/>
         <Route path='/upload' element={<ProductUploadForm/>}/>
         <Route path='/get-started' element={<GetStarted/>}/>
+        <Route path="/product/:productId" element={<ProductPage />} />
       </Routes>
 
     </div>

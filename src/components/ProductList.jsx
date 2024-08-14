@@ -32,6 +32,7 @@ const ProductList = ({ selectedProductType }) => {
       {products.map(product => (
         <ProductCard
           key={product.id}
+          id={product.id}
           image={product.images[0]} 
           title={product.productTitle}
           description={product.description}
